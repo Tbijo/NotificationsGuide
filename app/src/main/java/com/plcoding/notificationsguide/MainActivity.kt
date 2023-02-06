@@ -17,12 +17,18 @@ import com.plcoding.notificationsguide.ui.theme.NotificationsGuideTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // initialize service
         val service = CounterNotificationService(applicationContext)
+
         setContent {
             NotificationsGuideTheme {
                 Box(modifier = Modifier.fillMaxSize()) {
                     Button(onClick = {
+
+                        // display
                         service.showNotification(Counter.value)
+
                     }) {
                         Text(text = "Show notification")
                     }

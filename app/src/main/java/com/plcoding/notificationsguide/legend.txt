@@ -1,0 +1,14 @@
+// Local notifications
+// - show notifications locally (by clicking a button)
+// - Alarm Manager to show notifications (some Calendar app, show notif at a specific time)
+
+// Push notifications
+// - Server sends to a device
+// - reuires more set up, third party SDK which supports it
+
+
+Notification Channels
+- for using and sending notifications
+- for each notification should be a channel, if that channel is blocked by user in settings
+no notifications will be send
+- created in Application class
